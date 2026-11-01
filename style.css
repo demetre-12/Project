@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes down {
+  0% {
+    top: -50rem;
+  }
+  100% {
+    top: 0rem;
+    opacity: 0;
+  }
+}
+@keyframes empty {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slider {
+  0% {
+    right: -5rem;
+  }
+  25% {
+    right: 13rem;
+  }
+  50% {
+    right: 10rem;
+  }
+  100% {
+    right: 100rem;
+  }
+}
+@keyframes fadeIn-light {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes up {
+  0% {
+    bottom: -10rem;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .container {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body .container img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+}
+body .container .logo-background {
+  animation: up 1.5s;
+}
+body .container .card-empty {
+  opacity: 0;
+  animation: empty 0.5s forwards;
+  animation-delay: 2s;
+  z-index: 0;
+}
+body .container .slider-1 {
+  position: absolute;
+  top: 15rem;
+  right: -5rem;
+  animation: slider 2s linear forwards;
+  animation-delay: 3s;
+}
+body .container .suzuki {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+body .container .text-1 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 1s, 3s;
+}
+body .container .car-1 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 1s, 3.5s;
+}
+body .container .light-1 {
+  opacity: 0;
+  animation: fadeIn-light 1s forwards;
+  animation-delay: 2s;
+}
+body .container .card-1 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 1.5s, 3s;
+  z-index: 1;
+}
+body .container .emblem {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1.5s;
+}
+body .container .leaves-container {
+  height: 100%;
+  transform: translateY(200px);
+  animation: down 4s forwards;
+  position: absolute;
+}
+body .container .leaves-container .leaf {
+  width: 25px;
+  height: 25px;
+  background-image: url("./img/leaves_sprite.png");
+}
+body .container .leaves-container .leaf-1 {
+  background-position: 0px 0px;
+  position: absolute;
+  left: 2rem;
+  top: 15rem;
+}
+body .container .leaves-container .leaf-2 {
+  background-position: 23px 0x;
+  position: absolute;
+  left: 4rem;
+  top: 8rem;
+}
+body .container .leaves-container .leaf-3 {
+  background-position: 0 25px;
+  position: absolute;
+  left: 8rem;
+  top: 4rem;
+}
+body .container .leaves-container .leaf-4 {
+  background-position: 23px 25px;
+  position: absolute;
+  left: 10rem;
+  top: 1rem;
+}
+body .container .leaves-container .leaf-5 {
+  background-position: 0px 50px;
+  position: absolute;
+  left: 20rem;
+  top: 6rem;
+}
+body .container .leaves-container .leaf-6 {
+  background-position: 23px 50px;
+  position: absolute;
+  left: 17rem;
+  top: 10rem;
+}
+body .container .leaves-container .leaf-7 {
+  background-position: 0px 75px;
+  position: absolute;
+  left: 11rem;
+  top: 20rem;
+}
+body .container .leaves-container .leaf-8 {
+  background-position: 23px 75px;
+  position: absolute;
+  left: 15rem;
+  top: 19rem;
+}
+body .container .leaves-container .leaf-9 {
+  background-position: 0px 100px;
+  position: absolute;
+  left: 6.5rem;
+  top: 25rem;
+}
+body .container .leaves-container .leaf-10 {
+  background-position: 23px 100px;
+  position: absolute;
+  left: 22rem;
+  top: 23rem;
+}
+body .container .leaves-container .leaf-11 {
+  background-position: 0px 125px;
+  position: absolute;
+  left: 22rem;
+  top: 28rem;
+}
+body .container .leaves-container .leaf-12 {
+  background-position: 23px 125px;
+  position: absolute;
+  left: 25rem;
+  top: 30rem;
+}
+body .container .swift img {
+  opacity: 0;
+}
+body .container .text-2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 4.5s, 7s;
+}
+body .container .car-2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 4.5s, 7s;
+}
+body .container .light-2 {
+  opacity: 0;
+  animation: fadeIn-light 1s forwards;
+  animation-delay: 5.5s;
+}
+body .container .card-2 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 4.5s, 7s;
+  z-index: 1;
+}
+
+body .container .slider-2 {
+  position: absolute;
+  top: 15rem;
+  right: -5rem;
+  animation: slider 2s linear forwards;
+  animation-delay: 7s;
+}
+
+body .container .s-cross img {
+  opacity: 0;
+}
+
+body .container .text-3 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 8s, 11s;
+}
+body .container .car-3 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 8s, 11s;
+}
+body .container .light-3 {
+  opacity: 0;
+  animation: fadeIn-light 1s forwards;
+  animation-delay: 10s;
+}
+body .container .card-3 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 8s, 11s;
+  z-index: 1;
+}
+
+body .container .slider-3 {
+  position: absolute;
+  top: 15rem;
+  right: -5rem;
+  animation: slider 2s linear forwards;
+  animation-delay: 10.5s;
+}
+
+body .container .vitara img {
+  opacity: 0;
+}
+
+body .container .text-4 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 11.5s, 14.5s;
+}
+body .container .car-4 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 11.5s, 14.5s;
+}
+body .container .light-4 {
+  opacity: 0;
+  animation: fadeIn-light 1s forwards;
+  animation-delay: 13.5s;
+}
+body .container .card-4 {
+  opacity: 0;
+  animation: fadeIn 1s forwards, fadeOut 1s forwards;
+  animation-delay: 11.5s, 14.5s;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
